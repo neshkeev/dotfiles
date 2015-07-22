@@ -18,3 +18,4 @@
 tint2 &
 #setxkbmap -option grp:switch,grp:alt_shift_toggle,grp_led:­scroll us,ru
 setxkbmap -option grp:switch,grp:caps_toggle,grp_led:­scroll us,ru
+xset -dpms;xset s off
