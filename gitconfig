@@ -1,0 +1,31 @@
+[alias]
+	co = commit
+	ch = checkout
+	br = branch
+	m = checkout master
+	st = status
+	unstage = reset HEAD --
+	po = push origin
+	ft = fetch origin
+	me = merge
+	mom = merge origin/master
+	top = log -n 1
+	top5 = log -n 5
+	top10 = log -n 10
+	rom = rebase origin/master
+	clf = clean -f
+	cldf = clean -df
+	coa = commit --amend
+	sh = stash
+	pom = push origin master
+[user]
+	email = kastolom@gmail.com
+	name = Nikita Eshkeev
+[sendemail]
+	smtpuser = kastolom@gmail.com
+	smtpserver = smtp.googlemail.com
+	smtpencryption = tls
+	smtpserverport = 587
+	suppresscc = self
+[credential]
+	helper = cache
