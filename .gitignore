@@ -1,6 +1,3 @@
 !vim/
 vim/*
 !vim/UltiSnips/
-!vim/bundle/
-vim/bundle/*
-!vim/bundle/Vundle.vim
