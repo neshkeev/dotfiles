@@ -22,6 +22,8 @@ highlight ColorColumn ctermbg=darkgray
 
 " change the mapleader from \ to ,
 let mapleader=","
+" Use // to find visually selected text
+vnoremap // y/<C-R>"<CR>
 
 if has('persistent_undo')
 	set undofile
