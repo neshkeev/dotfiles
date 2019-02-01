@@ -1,0 +1,27 @@
+source ~/.vimrc
+
+nmap <F2> :action QuickJavaDoc<CR>
+nmap <F4> :action TypeHierarchy<CR>
+nmap ga :action Annotate<CR>
+
+nmap <Leader>pf :action GotoClass<CR>
+nmap <Leader>pr :action GotoFile<CR>
+
+nmap gf :action GotoTest<CR>
+nmap g] :action GotoImplementation<CR>
+nmap <Leader>s :action GotoSuperMethod<CR>
+
+nmap <c-s-o> :action OptimizeImports<CR>
+
+nmap <c-o> :action Back<CR>
+nmap <c-i> :action Forward<CR>
+
+nmap <Leader>mar :action Maven.Reimport<CR>
+nmap <Leader>mr :action Maven.ReimportProject<CR>
+nmap <Leader>mp :action ActivateMavenProjectsToolWindow<CR>
+
+nmap <Leader>ai :action CloseAllEditorsButActive<CR>
+
+nmap <Leader>ha :action HideAllWindows<CR>
+
+nmap <Leader>re :action editRunConfigurations<CR>
