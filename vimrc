@@ -18,6 +18,8 @@ nmap <Leader>w :w<CR>
 
 filetype plugin indent on
 
+set title
+
 if has('persistent_undo')
 	set undofile
 	set undodir=$HOME/.vim_undo
