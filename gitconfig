@@ -1,31 +1,33 @@
 [alias]
-	co = commit
-	ch = checkout
-	br = branch
-	m = checkout master
 	st = status
-	unstage = reset HEAD --
-	po = push origin
-	ft = fetch origin
-	me = merge
-	mom = merge origin/master
+	ada = add -A
+	ad = add
+	co = commit -s
 	top = log -n 1
 	top5 = log -n 5
-	top10 = log -n 10
-	rom = rebase origin/master
-	clf = clean -f
-	cldf = clean -df
-	coa = commit --amend
-	sh = stash
+	di = diff
+	coa = commit -s --amend
+	coar = commit -s --amend -C HEAD
+	dic = diff --cached
+	rj = checkout --
 	pom = push origin master
+	sh = stash
+	shp = stash pop
+	adu = add -u
+	adi = add -i
+	ft = fetch origin
+	mom = merge origin/master
+	cor = commit -s -C HEAD
+	un = reset HEAD
+	ls = diff-tree --no-commit-id --name-only -r
+	lsh = diff-tree --no-commit-id --name-only -r HEAD
+	br = branch
+	ch = checkout
+	dik = diff --check
+	dick = diff --cached --check
+	cldf = clean -df
+	po = push origin
+	m = checkout master
 [user]
-	email = kastolom@gmail.com
+	email = neshkeev@yandex.ru
 	name = Nikita Eshkeev
-[sendemail]
-	smtpuser = kastolom@gmail.com
-	smtpserver = smtp.googlemail.com
-	smtpencryption = tls
-	smtpserverport = 587
-	suppresscc = self
-[credential]
-	helper = cache
