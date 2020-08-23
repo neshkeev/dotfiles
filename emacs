@@ -24,7 +24,7 @@
 (use-package doom-themes
     :ensure t
     :config
-    (load-theme 'doom-vibrant))
+    (load-theme 'doom-vibrant t))
 
 (use-package doom-modeline
     :ensure t
@@ -121,3 +121,10 @@
 ;; Highlight search resaults
 (setq search-highlight        t)
 (setq query-replace-highlight t)
+
+(use-package proof-general
+    :ensure t
+    :no-require t
+    :custom-face
+    (proof-queue-face  ((t (:background "#392C7A"))))
+    (proof-locked-face ((t (:background "#212F47")))))
