@@ -1,9 +1,12 @@
 source ~/.vimrc
 
 set clipboard^=unnamed,unnamedplus
+set ideajoin
 
 nmap <Leader>pf :action GotoClass<CR>
 nmap <Leader>pr :action GotoFile<CR>
+
+nmap <Leader>ge :action RecentFiles<CR>
 
 nmap g] :action GotoImplementation<CR>
 nmap gr :action GotoRelated<CR>
@@ -19,13 +22,16 @@ nmap <Leader>gs :action MakeGradleModule<CR>
 nmap <Leader>mr :action Maven.ReimportProject<CR>
 nmap <Leader>mar :action Maven.Reimport<CR>
 
-nmap <Leader>ar :action Run<CR>
-nmap <Leader>ad :action Debug<CR>
-
 nmap <Leader>ai :action CloseAllEditorsButActive<CR>
-
 nmap <Leader>ha :action HideAllWindows<CR>
 
 nmap <Leader>re :action editRunConfigurations<CR>
-nmap <Leader>s :action GotoSuperMethod<CR>
-set ideajoin
+nmap <Leader>d :action GotoSuperMethod<CR>
+
+nmap ga :action Annotate<CR>
+
+nmap <Leader>ss :action StructuralSearchPlugin.StructuralSearchAction<CR>
+
+nmap <Leader>bb :action XDebugger.MuteBreakpoints<CR>
+
+nmap <Leader>ir :action ActivateInspectionResultsToolWindow<CR>
