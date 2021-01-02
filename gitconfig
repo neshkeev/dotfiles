@@ -5,6 +5,7 @@
 	co = commit -s
 	top = log -n 1
 	top5 = log -n 5
+	top10 = log -n 10
 	di = diff
 	coa = commit -s --amend
 	coar = commit -s --amend -C HEAD
@@ -15,7 +16,7 @@
 	shp = stash pop
 	adu = add -u
 	adi = add -i
-	ft = fetch origin
+	ft = fetch origin --prune
 	mom = merge origin/master
 	cor = commit -s -C HEAD
 	un = reset HEAD
@@ -28,6 +29,8 @@
 	cldf = clean -df
 	po = push origin
 	m = checkout master
+	rom = rebase origin/master
+	me = merge
 [user]
 	email = neshkeev@yandex.ru
 	name = Nikita Eshkeev
