@@ -14,8 +14,8 @@ nmap gr :action GotoRelated<CR>
 nmap <F2> :action QuickJavaDoc<CR>
 nmap <F4> :action TypeHierarchy<CR>
 
-nmap <c-o> :action Back<CR>
-nmap <c-i> :action Forward<CR>
+nmap <C-o> <Action>(Back)
+nmap <C-i> <Action>(Forward)
 
 nmap <Leader>gs :action MakeGradleModule<CR>
 
