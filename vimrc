@@ -6,6 +6,10 @@ set incsearch
 set ignorecase
 set smartcase
 
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 syntax on
 
 let mapleader=" "
